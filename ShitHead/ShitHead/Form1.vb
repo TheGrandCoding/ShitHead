@@ -1,15 +1,15 @@
 ﻿Public Class Form1
-    Dim MadeCard As New Card
     Dim playerCards As New List(Of Card)
     Dim SpareCards As New List(Of Card)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GenCards()
         Try
-            For i = 0 To (playerCards.Count - 1)
-                ListBox1.Items.Add(playerCards(i).Number)
-                ListBox1.Items.Add(playerCards(i).Suit)
-                ListBox1.Items.Add(playerCards(i).Type)
+            For Each card In playerCards
+                ListBox1.Items.Add($"{card.Suit} - {card.Type} - {card.Number}")
+            Next
+            For Each card In SpareCards
+                ListBox2.Items.Add($"{card.Suit} - {card.Type} - {card.Number}")
             Next
         Catch ex As Exception
 
@@ -19,47 +19,68 @@
 
     Public Function GenCards()
         Dim usedNums As New List(Of Integer)
-        Dim NewCards As New Random
+        Dim NewCards As New Random(DateTime.Now.Millisecond)
         Dim CurrCard As Integer
         Dim forcecount As Integer = 0
         Dim firstF As Integer = 0
         Dim second As Integer = 0
         Dim toggle As Boolean = False
-        For x = 0 To 52
-            CurrCard = NewCards.Next(1, 52)
+        For x = 1 To 52
+            CurrCard = NewCards.Next(1, 53)
 
             If usedNums.Contains(CurrCard) Then
                 While usedNums.Contains(CurrCard)
-                    CurrCard = NewCards.Next(CurrCard)
-
-                    If toggle = False Then
-                        firstF = CurrCard
-                        toggle = True
-                    Else
-                        second = CurrCard
-                        toggle = False
-                    End If
-                    If firstF = second Then
-                        forcecount += 1
-                    End If
-                    If forcecount > 3 Then
-                        Exit While
-                    End If
-
+                    CurrCard = NewCards.Next(1, 53)
                 End While
-                usedNums.Add(CurrCard)
-            Else
-                usedNums.Add(CurrCard)
             End If
+            usedNums.Add(CurrCard)
+            Dim MadeCard As New Card
 
             If CurrCard >= 1 And CurrCard <= 13 Then
                 MadeCard.Suit = "Hearts"
-                If CurrCard >= 1 And CurrCard <= 10 Then
-                    MadeCard.Number = CurrCard
-                    MadeCard.Type = "Number"
-                ElseIf CurrCard >= 11 And CurrCard <= 13 Then
-                    MadeCard.Type = "Picture"
-                    MadeCard.Number = CurrCard
+                If CurrCard >= 1 And CurrCard < 10 Then
+                    If CurrCard = 1 Then
+                        MadeCard.Number = 2
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 2 Then
+                        MadeCard.Number = 3
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 3 Then
+                        MadeCard.Number = 4
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 4 Then
+                        MadeCard.Number = 5
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 5 Then
+                        MadeCard.Number = 6
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 6 Then
+                        MadeCard.Number = 7
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 7 Then
+                        MadeCard.Number = 8
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 8 Then
+                        MadeCard.Number = 9
+                        MadeCard.Type = "Number"
+                    ElseIf CurrCard = 9 Then
+                        MadeCard.Number = 10
+                        MadeCard.Type = "Number"
+                    End If
+
+                ElseIf CurrCard = 10 Then
+                    MadeCard.Number = 1
+                    MadeCard.Type = "ace"
+
+                ElseIf CurrCard > 10 And CurrCard <= 13 Then
+                    If CurrCard = 11 Then
+                        MadeCard.Type = "Jack"
+                    ElseIf CurrCard = 12 Then
+                        MadeCard.Type = "Queen"
+                    ElseIf CurrCard = 13 Then
+                        MadeCard.Type = "King"
+                    End If
+
                 End If
             End If
 
