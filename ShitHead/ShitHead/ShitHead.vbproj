@@ -120,5 +120,23 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bak ov cord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back of cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back of cards1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif-6-551fa5ce788d.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

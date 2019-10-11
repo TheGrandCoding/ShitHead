@@ -22,5 +22,35 @@ ShitHead
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:ShitHead.My.Resources.Resources.back_of_cards">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ShitHead.My.Resources.Resources.back_of_cards1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ShitHead.My.Resources.Resources.Background">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ShitHead.My.Resources.Resources.bak_ov_cord">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ShitHead.My.Resources.Resources.ezgif_6_551fa5ce788d">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ShitHead.My.Resources.Resources.output_onlinepngtools__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
