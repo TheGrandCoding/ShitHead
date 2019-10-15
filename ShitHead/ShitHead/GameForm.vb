@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class GameForm
     Dim playerCards As New List(Of Card)
     Dim SpareCards As New List(Of Card)
     Dim PBList As New List(Of PictureBox) From {TableCard1, TableCard2, TableCard3}
@@ -19,8 +19,15 @@
 
         End Try
         For l = 0 To 2
+            Dim rm As Resources.ResourceManager = My.Resources.ResourceManager
+            Dim resname As String = "5C"
+            Dim p As Image = CType(rm.GetObject(resname), Image)
             Dim pb = PBList(l)
-            pb.Image = My.Resources.ezgif_6_551fa5ce788d
+
+            pb.Image = p
+            'Dim CardVal As String = "5C"
+
+            'pb.Image = My.Resources.ezgif_6_551fa5ce788d
 
 
 

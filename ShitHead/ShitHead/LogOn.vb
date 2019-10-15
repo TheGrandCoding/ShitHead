@@ -1,0 +1,69 @@
+﻿Imports System.Data.OleDb   'this library includes functions to connect to a database
+Public Class Form1
+    Dim provider As String
+    Dim dataFile As String
+    Dim connString As String
+    Dim myConnection As New OleDbConnection
+    Private Sub CmdLogin_Click(sender As Object, e As EventArgs) Handles CmdLogin.Click
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
+        'make the following your access database file path
+        dataFile = "\\cca07\C14\SeyJar14\year 10\computing\NEA\VB\ShapeTrainer1\Users.accdb"
+        connString = provider & dataFile    'sets up the database handler and file in a string
+        myConnection.ConnectionString = connString
+        'query to check if the username and password are found in database
+        Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM [UsersTable] WHERE [username] = '" _
+            & txtUserName.Text & "' AND [password] = '" & txtPassword.Text & "'", myConnection)
+        myConnection.Open() 'open the connection to the database file
+        Dim dr As OleDbDataReader = cmd.ExecuteReader   'create database reader 
+        ' the following variable holds True if user is found, and False if user is not found 
+        Dim userFound As Boolean = False
+        ' the following variables will hold the user first and last name if found.
+        Dim FirstName As String = ""
+        Dim LastName As String = ""
+
+        'if found:
+        If dr.Read Then   ' True if matched search fields
+            userFound = True
+            FirstName = dr("FirstName").ToString    'get the data from that record, store in FirstName
+            LastName = dr("LastName").ToString      'and LastName
+        End If
+        'then do something with the result if user is found/not found
+        If userFound = True Then
+            GameForm.Show()
+            Me.Hide()
+
+        Else
+            MsgBox("Sorry, username or password not found", MsgBoxStyle.OkOnly, "Invalid Login")
+            txtUserName.Focus()
+        End If
+        myConnection.Close()    'close the database file at the end of the sub
+
+    End Sub
+
+    Private Sub CmdCreate_Click(sender As Object, e As EventArgs) Handles CmdCreate.Click
+        'create a new user
+        Dim SQL As String
+        Dim objCmd As New OleDbCommand
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
+        'Change the following to your access database file path
+        dataFile = "\\cca07\C14\SeyJar14\year 10\computing\NEA\VB\ShapeTrainer1\Users.accdb"
+        connString = provider & dataFile    'sets up the database and file in a string
+        myConnection.ConnectionString = connString
+        'add the textbox fields to the database
+        SQL = "INSERT INTO UsersTable VALUES ('" & txtUname.Text & "', '" & txtPwd.Text & "', '" &
+            txtFname.Text & "', '" & txtSname.Text & "',)"
+
+        myConnection.Open() 'open the database file
+        'should have some error checking in here to make sure user doesn't already exist and that
+        'all input fields are appropriately completed
+        objCmd = New OleDbCommand(SQL, myConnection)    'run the SQL command to insert new record
+        objCmd.ExecuteNonQuery() 'update the database file
+        myConnection.Close()    'close the database file
+
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

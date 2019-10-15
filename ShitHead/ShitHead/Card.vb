@@ -9,10 +9,7 @@
         Dim usedNums As New List(Of Integer)
         Dim NewCards As New Random()
         Dim CurrCard As Integer
-        Dim forcecount As Integer = 0
-        Dim firstF As Integer = 0
-        Dim second As Integer = 0
-        Dim toggle As Boolean = False
+
         For x = 1 To 52
             CurrCard = NewCards.Next(1, 53)
 
