@@ -24,7 +24,7 @@
             Dim p As Image = CType(rm.GetObject(resname), Image)
             Dim pb = PBList(l)
 
-            pb.Image = p
+            'pb.Image = p
             'Dim CardVal As String = "5C"
 
             'pb.Image = My.Resources.ezgif_6_551fa5ce788d

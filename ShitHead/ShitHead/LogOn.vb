@@ -7,7 +7,7 @@ Public Class Form1
     Private Sub CmdLogin_Click(sender As Object, e As EventArgs) Handles CmdLogin.Click
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
         'make the following your access database file path
-        dataFile = "\\cca07\C14\SeyJar14\year 10\computing\NEA\VB\ShapeTrainer1\Users.accdb"
+        dataFile = "\\cca07\C14\SeyJar14\GitHub\ShitHead\UserLogs.accbd"
         connString = provider & dataFile    'sets up the database handler and file in a string
         myConnection.ConnectionString = connString
         'query to check if the username and password are found in database
@@ -45,8 +45,8 @@ Public Class Form1
         Dim SQL As String
         Dim objCmd As New OleDbCommand
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
-        'Change the following to your access database file path
-        dataFile = "\\cca07\C14\SeyJar14\year 10\computing\NEA\VB\ShapeTrainer1\Users.accdb"
+
+        dataFile = "\\cca07\C14\SeyJar14\GitHub\ShitHead\UserLogs.accdb"
         connString = provider & dataFile    'sets up the database and file in a string
         myConnection.ConnectionString = connString
         'add the textbox fields to the database
@@ -64,6 +64,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

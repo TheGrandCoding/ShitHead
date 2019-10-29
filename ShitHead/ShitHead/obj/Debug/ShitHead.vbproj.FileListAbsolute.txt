@@ -6,7 +6,8 @@
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.Form1.resources
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.Resources.resources
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.GenerateResource.cache
-\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.CoreCompileInputs.cache
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.exe
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xml
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb
+\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.GameForm.resources
+\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.CoreCompileInputs.cache
