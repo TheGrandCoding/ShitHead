@@ -10,3 +10,4 @@
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xml
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.GameForm.resources
+\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.CoreCompileInputs.cache

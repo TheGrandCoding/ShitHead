@@ -52,24 +52,18 @@ Public Class Form1
 
         myConnection.Open() 'open the database file
         'should have some error checking in here to make sure user doesn't already exist and that
-        Dim cmd As OleDbCommand = New OleDbCommand("SELECT * FROM [Users] WHERE [username] = '" _
-            & txtUserName.Text & "' AND [password] = '" & txtPassword.Text & "' AND [FirstName] = '" & txtFname.Text & "'_
-            AND [LastName] = '" & txtSname.Text & "'", myConnection)
-        Dim dr As OleDbDataReader = cmd.ExecuteReader   'create database reader 
-        ' the following variable holds True if user is found, and False if user is not found 
-        Dim dataFound As Boolean = False
-        If dr.Read Then   ' True if matched search fields
-            dataFound = True
-            MsgBox("User already exists")
-        End If
+
 
         'all input fields are appropriately completed
-        objCmd = New OleDbCommand(SQL, myConnection)    'run the SQL command to insert new record
-        objCmd.ExecuteNonQuery() 'update the database file
-        MsgBox("Account created succesfully")
-        myConnection.Close()    'close the database file
-
-
+        Try
+            objCmd = New OleDbCommand(SQL, myConnection)    'run the SQL command to insert new record
+            objCmd.ExecuteNonQuery() 'update the database file
+            MsgBox("Account created succesfully")
+            myConnection.Close()    'close the database file
+        Catch ex As Exception
+            MsgBox("Account already exists please try again")
+            myConnection.Close()
+        End Try
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
