@@ -18,16 +18,21 @@
         Catch ex As Exception
 
         End Try
+        Dim l As Integer
         For l = 0 To 2
             Dim rm As Resources.ResourceManager = My.Resources.ResourceManager
             Dim resname As String = "5C"
-            Dim p As Image = CType(rm.GetObject(resname), Image)
+            Dim p As Image = CType(rm.GetObject("\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\Resources\2H.png"), Image)
             Dim pb = PBList(l)
 
+            Dim cardim As Image = Image.FromFile("\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\Resources\2H.png")
 
             Dim CardVal As String = "5C"
 
-            pb.Image = My.Resources.AC
+            pb.Image = CType(rm.GetObject("AC.png"), Image)
+
+
+            'pb.Image = My.Resources.AC
 
 
 
