@@ -1,5 +1,5 @@
 ﻿Imports System.Data.OleDb   'this library includes functions to connect to a database
-Public Class Form1
+Public Class LogOn
     Dim provider As String
     Dim dataFile As String
     Dim connString As String
@@ -27,7 +27,7 @@ Public Class Form1
         End If
         'then do something with the result if user is found/not found
         If userFound = True Then
-            GameForm.Show()
+            MainMenu.Show()
             Me.Hide()
 
         Else

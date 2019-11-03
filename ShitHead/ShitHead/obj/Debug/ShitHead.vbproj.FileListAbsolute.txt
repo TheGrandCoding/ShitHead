@@ -10,3 +10,16 @@
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xml
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb
 \\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.GameForm.resources
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.exe.config
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.exe
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.pdb
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.xml
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbprojAssemblyReference.cache
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.GameForm.resources
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.Resources.resources
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.GenerateResource.cache
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.exe
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xml
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.MainMenu.resources
+C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.LogOn.resources
