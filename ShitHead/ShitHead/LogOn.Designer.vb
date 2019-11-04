@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class LogOn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -59,7 +59,7 @@ Partial Class Form1
         Me.Label1.Location = New System.Drawing.Point(41, 38)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(77, 18)
+        Me.Label1.Size = New System.Drawing.Size(97, 24)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Username"
         '
@@ -70,7 +70,7 @@ Partial Class Form1
         Me.Label2.Location = New System.Drawing.Point(41, 70)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 18)
+        Me.Label2.Size = New System.Drawing.Size(92, 24)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Password"
         '
@@ -80,7 +80,7 @@ Partial Class Form1
         Me.txtUserName.Location = New System.Drawing.Point(141, 38)
         Me.txtUserName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(192, 24)
+        Me.txtUserName.Size = New System.Drawing.Size(192, 29)
         Me.txtUserName.TabIndex = 0
         '
         'txtPassword
@@ -90,7 +90,7 @@ Partial Class Form1
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(192, 24)
+        Me.txtPassword.Size = New System.Drawing.Size(192, 29)
         Me.txtPassword.TabIndex = 1
         '
         'CmdCreate
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.txtUname.Location = New System.Drawing.Point(143, 28)
         Me.txtUname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUname.Name = "txtUname"
-        Me.txtUname.Size = New System.Drawing.Size(213, 24)
+        Me.txtUname.Size = New System.Drawing.Size(213, 29)
         Me.txtUname.TabIndex = 4
         '
         'txtFname
@@ -120,7 +120,7 @@ Partial Class Form1
         Me.txtFname.Location = New System.Drawing.Point(143, 60)
         Me.txtFname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFname.Name = "txtFname"
-        Me.txtFname.Size = New System.Drawing.Size(213, 24)
+        Me.txtFname.Size = New System.Drawing.Size(213, 29)
         Me.txtFname.TabIndex = 5
         '
         'txtPwd
@@ -130,7 +130,7 @@ Partial Class Form1
         Me.txtPwd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPwd.Name = "txtPwd"
         Me.txtPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPwd.Size = New System.Drawing.Size(213, 24)
+        Me.txtPwd.Size = New System.Drawing.Size(213, 29)
         Me.txtPwd.TabIndex = 7
         '
         'Label3
@@ -140,7 +140,7 @@ Partial Class Form1
         Me.Label3.Location = New System.Drawing.Point(40, 127)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 18)
+        Me.Label3.Size = New System.Drawing.Size(92, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Password"
         '
@@ -151,7 +151,7 @@ Partial Class Form1
         Me.Label4.Location = New System.Drawing.Point(39, 31)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 18)
+        Me.Label4.Size = New System.Drawing.Size(97, 24)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Username"
         '
@@ -162,7 +162,7 @@ Partial Class Form1
         Me.Label5.Location = New System.Drawing.Point(32, 64)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 18)
+        Me.Label5.Size = New System.Drawing.Size(101, 24)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "First Name"
         '
@@ -173,7 +173,7 @@ Partial Class Form1
         Me.Label6.Location = New System.Drawing.Point(49, 97)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 18)
+        Me.Label6.Size = New System.Drawing.Size(87, 24)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Surname"
         '
@@ -183,7 +183,7 @@ Partial Class Form1
         Me.txtSname.Location = New System.Drawing.Point(143, 92)
         Me.txtSname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSname.Name = "txtSname"
-        Me.txtSname.Size = New System.Drawing.Size(213, 24)
+        Me.txtSname.Size = New System.Drawing.Size(213, 29)
         Me.txtSname.TabIndex = 6
         '
         'GroupBox1
@@ -207,12 +207,11 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "New Users"
         '
-        'Form1
+        'LogOn
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 321)
-        Me.ControlBox = False
+        Me.ClientSize = New System.Drawing.Size(466, 321)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.Label2)
@@ -223,7 +222,7 @@ Partial Class Form1
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "LogOn"
         Me.ShowIcon = False
         Me.Text = "Login Screen"
         Me.GroupBox1.ResumeLayout(False)

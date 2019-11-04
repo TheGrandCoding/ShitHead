@@ -25,11 +25,11 @@
             Dim p As Image = CType(rm.GetObject("\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\Resources\2H.png"), Image)
             Dim pb = PBList(l)
 
-            Dim cardim As Image = Image.FromFile("\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\Resources\2H.png")
+            'Dim cardim As Image = Image.FromFile("\\cca07\C14\SeyJar14\GitHub\ShitHead\ShitHead\ShitHead\Resources\2H.png")
 
             Dim CardVal As String = "5C"
 
-            pb.Image = CType(rm.GetObject("AC.png"), Image)
+            'pb.Image = CType(rm.GetObject("AC.png"), Image)
 
 
             'pb.Image = My.Resources.AC
