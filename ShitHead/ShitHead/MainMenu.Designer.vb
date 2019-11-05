@@ -25,7 +25,6 @@ Partial Class MainMenu
         Me.cmdPlay = New System.Windows.Forms.Button()
         Me.cmdStore = New System.Windows.Forms.Button()
         Me.cmdExit = New System.Windows.Forms.Button()
-        Me.cmdLogOut = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -36,7 +35,7 @@ Partial Class MainMenu
         Me.cmdPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdPlay.ForeColor = System.Drawing.Color.Yellow
         Me.cmdPlay.Location = New System.Drawing.Point(51, 84)
-        Me.cmdPlay.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdPlay.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdPlay.Name = "cmdPlay"
         Me.cmdPlay.Size = New System.Drawing.Size(190, 54)
         Me.cmdPlay.TabIndex = 0
@@ -49,7 +48,7 @@ Partial Class MainMenu
         Me.cmdStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdStore.ForeColor = System.Drawing.Color.Yellow
         Me.cmdStore.Location = New System.Drawing.Point(51, 160)
-        Me.cmdStore.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdStore.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdStore.Name = "cmdStore"
         Me.cmdStore.Size = New System.Drawing.Size(190, 54)
         Me.cmdStore.TabIndex = 1
@@ -62,25 +61,12 @@ Partial Class MainMenu
         Me.cmdExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmdExit.ForeColor = System.Drawing.Color.Yellow
         Me.cmdExit.Location = New System.Drawing.Point(10, 239)
-        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmdExit.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdExit.Name = "cmdExit"
-        Me.cmdExit.Size = New System.Drawing.Size(135, 32)
+        Me.cmdExit.Size = New System.Drawing.Size(266, 32)
         Me.cmdExit.TabIndex = 2
         Me.cmdExit.Text = "Quit"
         Me.cmdExit.UseVisualStyleBackColor = True
-        '
-        'cmdLogOut
-        '
-        Me.cmdLogOut.BackgroundImage = Global.ShitHead.My.Resources.Resources.Background
-        Me.cmdLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdLogOut.ForeColor = System.Drawing.Color.Yellow
-        Me.cmdLogOut.Location = New System.Drawing.Point(149, 239)
-        Me.cmdLogOut.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.cmdLogOut.Name = "cmdLogOut"
-        Me.cmdLogOut.Size = New System.Drawing.Size(126, 32)
-        Me.cmdLogOut.TabIndex = 3
-        Me.cmdLogOut.Text = "Log Out"
-        Me.cmdLogOut.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -104,11 +90,10 @@ Partial Class MainMenu
         Me.ClientSize = New System.Drawing.Size(287, 290)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cmdLogOut)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.cmdStore)
         Me.Controls.Add(Me.cmdPlay)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MainMenu"
         Me.Text = "Main Menu"
         Me.ResumeLayout(False)
@@ -119,6 +104,5 @@ Partial Class MainMenu
     Friend WithEvents cmdPlay As Button
     Friend WithEvents cmdStore As Button
     Friend WithEvents cmdExit As Button
-    Friend WithEvents cmdLogOut As Button
     Friend WithEvents Label1 As Label
 End Class

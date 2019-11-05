@@ -1,4 +1,8 @@
 ﻿Public Class MainMenu
+    Public UserName As String
+    Public Score As Integer
+
+
     Private Sub cmdPlay_Click(sender As Object, e As EventArgs) Handles cmdPlay.Click
         GameForm.Show()
         Me.Hide()
@@ -18,8 +22,11 @@
         End If
     End Sub
 
-    Private Sub cmdLogOut_Click(sender As Object, e As EventArgs) Handles cmdLogOut.Click
-        LogOn.Show()
+    Private Sub cmdLogOut_Click(sender As Object, e As EventArgs)
         Me.Hide()
+    End Sub
+
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
