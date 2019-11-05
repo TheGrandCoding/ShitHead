@@ -26,6 +26,7 @@ Partial Class MainMenu
         Me.cmdStore = New System.Windows.Forms.Button()
         Me.cmdExit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnLogOut = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cmdPlay
@@ -63,7 +64,7 @@ Partial Class MainMenu
         Me.cmdExit.Location = New System.Drawing.Point(10, 239)
         Me.cmdExit.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdExit.Name = "cmdExit"
-        Me.cmdExit.Size = New System.Drawing.Size(266, 32)
+        Me.cmdExit.Size = New System.Drawing.Size(177, 32)
         Me.cmdExit.TabIndex = 2
         Me.cmdExit.Text = "Quit"
         Me.cmdExit.UseVisualStyleBackColor = True
@@ -81,6 +82,19 @@ Partial Class MainMenu
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "ShitHead"
         '
+        'btnLogOut
+        '
+        Me.btnLogOut.BackgroundImage = Global.ShitHead.My.Resources.Resources.Background
+        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogOut.ForeColor = System.Drawing.Color.Yellow
+        Me.btnLogOut.Location = New System.Drawing.Point(191, 239)
+        Me.btnLogOut.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(85, 32)
+        Me.btnLogOut.TabIndex = 5
+        Me.btnLogOut.Text = "LogOut"
+        Me.btnLogOut.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -89,6 +103,7 @@ Partial Class MainMenu
         Me.BackgroundImage = Global.ShitHead.My.Resources.Resources.Background
         Me.ClientSize = New System.Drawing.Size(287, 290)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnLogOut)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.cmdStore)
@@ -105,4 +120,5 @@ Partial Class MainMenu
     Friend WithEvents cmdStore As Button
     Friend WithEvents cmdExit As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnLogOut As Button
 End Class

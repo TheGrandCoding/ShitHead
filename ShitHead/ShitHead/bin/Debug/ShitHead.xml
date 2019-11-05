@@ -292,5 +292,16 @@ ShitHead
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:ShitHead.MainMenu.LoadFromFile">
+ <summary>
+ Loads the Scores dictionary from the text file
+ </summary>
+</member>
+<member name="M:ShitHead.MainMenu.SaveToFile">
+ <summary>
+ To be called when the <see cref="F:ShitHead.MainMenu.Scores"/> dictionary is updated
+ Causes it to be wrote to text file
+ </summary>
+</member>
 </members>
 </doc>

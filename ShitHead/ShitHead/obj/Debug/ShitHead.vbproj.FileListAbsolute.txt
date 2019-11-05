@@ -23,3 +23,16 @@ C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xm
 C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb
 C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.MainMenu.resources
 C:\Users\jarex\Documents\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.LogOn.resources
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.exe.config
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.exe
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.pdb
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\bin\Debug\ShitHead.xml
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbprojAssemblyReference.cache
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.GameForm.resources
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.MainMenu.resources
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.Resources.resources
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.SelectUser.resources
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.vbproj.GenerateResource.cache
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.exe
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.xml
+\\cca07\C14\CheAle14\GitHub\ShitHead\ShitHead\ShitHead\obj\Debug\ShitHead.pdb

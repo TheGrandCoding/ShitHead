@@ -42,7 +42,7 @@ Partial Class SelectUser
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(227, 30)
         Me.btnNew.TabIndex = 1
-        Me.btnNew.Text = "Button1"
+        Me.btnNew.Text = "New User"
         Me.btnNew.UseVisualStyleBackColor = True
         '
         'SelectUser
